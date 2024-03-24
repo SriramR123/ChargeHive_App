@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ChargiFy</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string-array name="status_list">
+        <item>Charging</item>
+        <item>Completed</item>
+    </string-array>
+
+
+    <string name="mapbox_access_token" translatable="false" tools:ignore="UnusedResources">pk.eyJ1IjoiY2FiaW5lZXNoIiwiYSI6ImNsdHYycjJpcDFkd3cycXA3NmxpbG9lazMifQ.MYVfLZLYFkbDgpw4FWhRQQ</string>
+
+
+</resources>
