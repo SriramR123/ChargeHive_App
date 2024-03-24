@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EVstationFullDetails">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/ev_pic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ev_station_sample"
+        android:layout_height="250dp">
+    </ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ev_pic">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/ev_station_name"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="EV station name"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:id="@+id/ev_station_loc"
+                android:textStyle="bold|italic"
+                android:text="Electric vehicle charging stationEVP, CARNIVAL CINEMAS, National Highway, Chembarambakkam, Tamil Nadu 600124"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:numStars="5"
+                android:id="@+id/ev_station_rating"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:rating="3.5"
+                android:layout_gravity="center"
+                android:theme="@style/RatingBar"
+                android:layout_height="wrap_content">
+            </RatingBar>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="textEnd"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/ev_station_status"
+                android:textColor="#199900"
+                android:text="🍁EV station status"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="textStart"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:id="@+id/ev_mobile_no"
+                android:textColor="@color/black"
+                android:text="Ph : +91 6383748294"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="textStart"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Feedback : "
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:maxLines="10"
+                android:minLines="3"
+                android:id="@+id/feedback"
+                android:hint="write your feedback or queries"
+                android:background="@drawable/input_bg"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+            </EditText>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="textStart"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Rate : "
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:maxLines="10"
+                android:hint="rate eg:4.5"
+                android:id="@+id/rate_by_customer"
+                android:background="@drawable/input_bg"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="textStart"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Update status : "
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/status_list"
+                android:layout_height="30dp">
+            </Spinner>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
